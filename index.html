@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Video Player | Treehouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="mp/mediaelementplayer.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <section style="display:none;">
+        <form action="#" method="get">
+            <select name="lang">
+                <option value="en" selected>)</option>
+                <option value="nl"></option>
+            </select>
+
+            <select name="stretching">
+                <option value="auto" selected></option>
+                <option value="responsive"></option>
+                <option value="fill" selected></option>
+                <option value="none" selected></option>
+            </select>
+
+        </form>
+    </section>
+
+    <br>
+    <div class="players" id="player1-container">
+
+        <div class="media-wrapper" id="video-block">
+            <video id="player1" width="640" height="360" style="max-width:100%;" preload="none" autoplay muted loop
+                   class="mejs__button">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.ogg" type="video/ogg">
+                <track srclang="en" kind="subtitles" src="video/captions.vtt">
+                <track srclang="en" kind="chapters" src="video/chapters.vtt">
+            </video>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div class="spacer"></div>
+    <div id="caption-wrapper" style="margin-top:30px;">
+        <!-- subtitles here -->
+    </div>
+
+
+    <script src="mp/mediaelement-and-player.min.js"></script>
+    <script src="mp/application.js"></script>
+
+</body>
+</html>
